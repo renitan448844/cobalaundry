@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+// Import komponen
+import Banner from './components/Banner';
+import HeroSection from './components/HeroSection';
+import FeatureCard from './components/FeatureCard';
+import Footer from './components/Footer';
+
+// Import CSS utama
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Banner */}
+      <Banner />
+
+      {/* Hero Section */}
+      <HeroSection />
+
+      {/* Features */}
+      <div className="features-container">
+        <FeatureCard
+          title="Jadwalkan Pengambilan"
+          description="Pilih kapan dan di mana pakaian kamu diambil."
+        />
+        <FeatureCard
+          title="Kualitas Pencucian"
+          description="Proses cuci dilakukan dengan cermat untuk menjaga kualitas."
+        />
+        <FeatureCard
+          title="Antar Kembali"
+          description="Pakaian akan diantar langsung ke depan pintu rumah kamu."
+        />
+      </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

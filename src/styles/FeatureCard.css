@@ -1,0 +1,9 @@
+.feature-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+}
+.feature-card h3 {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
