@@ -1,6 +1,86 @@
+/* Global font import (misalnya Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 .footer {
-  background-color: #333;
+  background-color: #2b78c3;
   color: white;
-  padding: 20px 0;
-  text-align: center;
+  padding: 40px 5%;
+  font-family: 'Poppins', sans-serif;
 }
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  max-width: 140px;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-size: 15px;
+  margin: 0;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-col p {
+  margin: 4px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-col .address {
+  font-size: 13px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.footer-logo {
+  width: 160px; /* sesuaikan */
+  filter: brightness(0) invert(1);
+}
+

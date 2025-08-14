@@ -1,15 +1,55 @@
+/* Hero Section */
 .hero {
-  background-color: #f7f7f7;
-  padding: 100px 20px;
+    background: url('../assets/laundry2.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-.hero h1 {
-  font-size: 2.5rem;
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
 }
-.hero p {
-  margin: 20px 0;
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 700px;
+  margin-left: 5%;
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
   font-size: 1.2rem;
+  line-height: 1.5;
 }
-.hero button {
-  padding: 10px 20px;
-  font-size: 1rem;
+.hero-btn {
+  display: inline-block;
+  background: #4bb4f8;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* Chatbot Icon */
+.chatbot-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+.chatbot-icon:hover {
+  background-color: #0056b3;
 }

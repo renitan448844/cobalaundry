@@ -1,0 +1,25 @@
+.services {
+  padding: 60px 5%;
+  background: #f3f9ff;
+  text-align: center;
+}
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 260px;
+  box-shadow: 0 4px 20px rgba(2,132,199,0.1);
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
