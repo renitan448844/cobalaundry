@@ -1,55 +1,57 @@
-/* Hero Section */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 .hero {
-    background: url('../assets/laundry2.jpg') center/cover no-repeat;
   height: 100vh;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* biar bisa turun dengan margin-top */
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out; /* animasi halus */
 }
+
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.45);
 }
+
 .hero-content {
   position: relative;
   color: white;
   max-width: 700px;
   margin-left: 5%;
+  margin-top: 20%; /* ⬅️ lebih turun */
 }
+
 .hero-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
 }
+
 .hero-content p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
+
 .hero-btn {
   display: inline-block;
-  background: #4bb4f8;
-  padding: 0.8rem 1.5rem;
+  background: linear-gradient(to right, #1d4ed8, #38a2f4);
+  padding: 0.9rem 1.7rem;
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
-  margin-top: 1.5rem;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
-/* Chatbot Icon */
-.chatbot-icon {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 50%;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  z-index: 999;
-}
-.chatbot-icon:hover {
-  background-color: #0056b3;
+.hero-btn:hover {
+  background: linear-gradient(to right, #163bb0, #2c8ce0);
 }

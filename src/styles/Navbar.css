@@ -4,45 +4,75 @@
   width: 100%;
   z-index: 999;
   transition: all 0.3s ease;
-  padding: 15px 0;
-}
-
-.navbar:not(.scrolled) {
-  background: transparent;
-  color: white;
-}
-
-.navbar.scrolled {
-  background: white;
-  color: black;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  padding: 15px 5px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: transparent;
 }
 
-.nav-links {
+.navbar-transparent {
+  background: transparent;
+  color: white;
+  height: 70px; 
+}
+
+.navbar-scrolled {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 70px; 
+}
+
+.navbar-logo img {
+  height: 50px; 
+  transition: filter 0.3s ease, height 0.3s ease;
+  margin-left: 40px;
+}
+
+.logo-white {
+  filter: brightness(0) invert(1);
+}
+
+.logo-colored {
+  filter: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+}
+
+.navbar-menu {
   list-style: none;
   display: flex;
   gap: 25px;
+  margin: 0;
 }
 
-.nav-links li {
-  cursor: pointer;
+.navbar-menu li a {
+  text-decoration: none;
+  color: inherit;
   font-weight: 500;
+  padding: 10px 5px; 
+  font-size: 18px;
 }
 
-.pesan-btn {
-  background: #38a2f4;
+.navbar-btn {
+  background: linear-gradient(to right, #1d4ed8, #38a2f4);
   color: white;
-  padding: 10px 18px;
+  padding: 8px 30px; 
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 600; 
+}
+
+.navbar-btn:hover {
+  background: #1d7ed0;
 }
