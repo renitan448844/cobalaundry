@@ -10,8 +10,8 @@
 
 .chat-popup {
   position: fixed;
-  bottom: 80px;
-  right: 20px;
+  bottom: 20px;
+  right: 15px;
   width: 350px;
   height: 500px;
   background: #ffffff;
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   background: white;
-  padding: 8px 14px;
+  padding: 6px 10px;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -58,7 +58,7 @@
 
 .chat-text {
   margin-right: 8px;
-  font-size: 14px; 
+  font-size: 12px; 
   color: #000;
   line-height: 1.4;
   font-family: 'Poppins', sans-serif; 
@@ -73,19 +73,19 @@
 
 
 .chat-icon {
-  background: #6c63ff; /* warna ungu chatbot */
+  background: #3A81BE; 
   color: #fff;
   border-radius: 50%;
-  width: 70px;  /* ukuran lingkaran lebih besar */
-  height: 70px;
-  font-size: 22px; /* icon lebih besar */
+  width: 60px;  
+  height: 60px;
+  font-size: 20px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .chat-icon:hover {
-  background: #2e4a7d;
+  background: linear-gradient(to right, #1d4ed8, #38a2f4);
   transform: scale(1.08);
 }
 

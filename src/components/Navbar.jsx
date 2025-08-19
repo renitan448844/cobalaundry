@@ -23,7 +23,6 @@ export default function Navbar() {
         />
       </div>
 
-      {/* gabungkan menu + tombol */}
       <div className="navbar-right">
         <ul className="navbar-menu">
           <li><a href="#home">Beranda</a></li>

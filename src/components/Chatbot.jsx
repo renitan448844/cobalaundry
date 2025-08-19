@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Bot } from "lucide-react"; // ikon robot
+import { MessageCircle } from "lucide-react";
 import "../styles/Chatbot.css";
 
 export default function Chatbot() {
@@ -24,16 +24,17 @@ export default function Chatbot() {
         </div>
       )}
 
-      {/* Tombol chatbot */}
-      <div className="chat-help" onClick={toggleChat}>
-        <div className="chat-text">
-          <strong>Butuh Bantuan?</strong>
-          Klik untuk memulai chat
+      {!isOpen && (
+        <div className="chat-help" onClick={toggleChat}>
+          <div className="chat-text">
+            <strong>Butuh Bantuan?</strong>
+            Klik untuk memulai chat
+          </div>
+          <div className="chat-icon">
+            <MessageCircle size={36} /> 
+          </div>
         </div>
-        <div className="chat-icon">
-          <Bot size={36} /> {/* dibesarkan dari 24 ke 36 */}
-        </div>
-      </div>
+      )}
     </div>
   );
 }
