@@ -22,7 +22,6 @@ export default function App() {
       </main>
       <Footer />
 
-      {/* Chatbot diletakkan di sini agar selalu di pojok kanan bawah */}
       <Chatbot />
     </div>
   );

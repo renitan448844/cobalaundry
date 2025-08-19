@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-wrapper">
-        {/* Logo dan headline */}
         <div className="footer-col">
           <img src={logoEvewash} alt="Evewash Logo" className="footer-logo" />
           <p className="footer-tagline">
@@ -15,7 +14,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Kontak */}
         <div className="footer-col">
           <h4>Kontak</h4>
           <p>
@@ -30,7 +28,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Jam Buka */}
         <div className="footer-col">
           <h4>Jam Buka</h4>
           <p>
@@ -40,14 +37,12 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Tautan kebijakan */}
       <div className="footer-links">
         <a href="#syarat">Syarat dan Ketentuan</a>
         <span className="divider">|</span>
         <a href="#privasi">Privasi</a>
       </div>
 
-      {/* Copyright */}
       <p className="footer-copy">© 2025 Evewash Clone. All rights reserved.</p>
     </footer>
   );

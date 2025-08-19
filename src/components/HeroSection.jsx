@@ -12,7 +12,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // ganti gambar tiap 4 detik
+    }, 4000); 
     return () => clearInterval(interval);
   }, [images.length]);
 
