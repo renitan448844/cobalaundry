@@ -33,6 +33,15 @@
   align-items: center;
 }
 
+.chat-header .close-btn,
+.chat-header .close-icon {
+  color: #fff;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .chat-body {
   flex: 1;
   padding: 10px;
@@ -83,15 +92,6 @@
   justify-content: center;
 }
 
-.chat-header .close-btn,
-.chat-header .close-icon {
-  color: #fff;
-  font-size: 20px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .chat-icon:hover {
   background: linear-gradient(to right, #1d4ed8, #38a2f4);
   transform: scale(1.08);
@@ -114,5 +114,18 @@
   }
   50% {
     transform: translateY(-6px);
+  }
+}
+
+.chat-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+@media (max-height: 750px) {
+  .chat-popup {
+    bottom: 15px; 
   }
 }
