@@ -8,7 +8,8 @@
   margin-bottom: 1rem;
 }
 .services-grid {
-  display: flex;
+  display: flex; 
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }

@@ -31,6 +31,7 @@
   font-weight: 700;
   margin-bottom: 1.2rem;
   line-height: 1.2;
+  
 }
 
 .hero-content p {
@@ -55,3 +56,12 @@
 .hero-btn:hover {
   background: linear-gradient(to right, #163bb0, #2c8ce0);
 }
+    @media (max-width: 767px) {
+      .hero-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+  
+}
+    }

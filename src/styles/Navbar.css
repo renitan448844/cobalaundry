@@ -49,6 +49,7 @@
   display: flex;
   gap: 25px;
   margin: 0;
+  margin-left: 20px; 
 }
 
 .navbar-menu li a {
@@ -62,17 +63,98 @@
 .navbar-btn {
   background: linear-gradient(to right, #1d4ed8, #38a2f4);
   color: white;
-  padding: 8px 30px; 
-  border-radius: 8px;
+  padding: 6px 18px; 
+  border-radius: 6px; 
   border: none;
   cursor: pointer;
   text-decoration: none;
   transition: background 0.3s ease;
-  margin-right: 30px;
-  font-size: 18px;
-  font-weight: 600; 
+  margin-right: 20px; 
+  font-size: 18px; 
+  font-weight: 200; 
 }
 
 .navbar-btn:hover {
   background: #1d7ed0;
 }
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-right: 20px;
+}
+
+/* //yang ditambahkan  */
+
+.menu-toggle span {
+  width: 20px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+.navbar-scrolled .menu-toggle span {
+  background: black;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+  .menu-toggle {
+    display: flex;
+  }
+
+@media (max-width: 768px) {
+  .navbar-right {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(60, 43, 207, 0.932); 
+    backdrop-filter: blur(8px);           
+    flex-direction: column;
+    align-items: center;
+    width: 100%;                         
+    padding: 5px 8px;                    
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;        
+    border-radius: 15px;     
+    padding-top: 30px; 
+  }
+
+  .navbar-right.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .navbar-menu li a {
+    color: rgb(250, 248, 248) !important;
+  }
+
+  .navbar-btn {
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+  margin: 15px auto;
+  font-size: 18px;
+
+  }
+

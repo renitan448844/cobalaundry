@@ -124,8 +124,12 @@
   display: block;
 }
 
-@media (max-height: 750px) {
+@media (max-width: 400px) {
   .chat-popup {
-    bottom: 15px; 
+    width: 300px;
+    height: 450px;
+    right: 10px;
+    bottom: 10px;
   }
 }
+

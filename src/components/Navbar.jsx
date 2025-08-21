@@ -4,6 +4,7 @@ import "../styles/Navbar.css";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,8 +14,14 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav className={`navbar ${scrolled ? "navbar-scrolled" : "navbar-transparent"}`}>
+    <nav
+      className={`navbar ${scrolled ? "navbar-scrolled" : "navbar-transparent"}`}
+    >
       <div className="navbar-logo">
         <img
           src={logo}
@@ -23,7 +30,16 @@ export default function Navbar() {
         />
       </div>
 
-      <div className="navbar-right">
+      <div
+        className={`menu-toggle ${menuOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div className={`navbar-right ${menuOpen ? "open" : ""}`}>
         <ul className="navbar-menu">
           <li><a href="#home">Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>
