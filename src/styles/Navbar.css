@@ -4,7 +4,7 @@
   width: 100%;
   z-index: 999;
   transition: all 0.3s ease;
-  padding: 15px 5px; 
+  padding: 15px 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,18 +14,19 @@
 .navbar-transparent {
   background: transparent;
   color: white;
-  height: 70px; 
+  height: 70px;
 }
 
 .navbar-scrolled {
   background: rgba(255, 255, 255, 0.9);
   color: black;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  height: 70px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 70px;
 }
 
+/* Logo */
 .navbar-logo img {
-  height: 50px; 
+  height: 50px;
   transition: filter 0.3s ease, height 0.3s ease;
   margin-left: 40px;
 }
@@ -41,7 +42,7 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 40px; 
+  gap: 40px;
 }
 
 .navbar-menu {
@@ -49,29 +50,29 @@
   display: flex;
   gap: 25px;
   margin: 0;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .navbar-menu li a {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  padding: 10px 5px; 
+  padding: 10px 5px;
   font-size: 18px;
 }
 
 .navbar-btn {
   background: linear-gradient(to right, #1d4ed8, #38a2f4);
   color: white;
-  padding: 6px 18px; 
-  border-radius: 6px; 
+  padding: 6px 18px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
   text-decoration: none;
   transition: background 0.3s ease;
-  margin-right: 20px; 
-  font-size: 18px; 
-  font-weight: 200; 
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .navbar-btn:hover {
@@ -85,8 +86,6 @@
   gap: 5px;
   margin-right: 20px;
 }
-
-/* //yang ditambahkan  */
 
 .menu-toggle span {
   width: 20px;
@@ -109,27 +108,24 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-  .menu-toggle {
-    display: flex;
-  }
-
+/* Responsive Mobile */
 @media (max-width: 768px) {
   .navbar-right {
     position: absolute;
     top: 70px;
     right: 0;
-    background: rgba(60, 43, 207, 0.932); 
-    backdrop-filter: blur(8px);           
+    background: rgba(60, 43, 207, 0.932);
+    backdrop-filter: blur(8px);
     flex-direction: column;
     align-items: center;
-    width: 100%;                         
-    padding: 5px 8px;                    
+    width: 100%;
+    padding: 5px 8px;
     transform: translateY(-20px);
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s ease;        
-    border-radius: 15px;     
-    padding-top: 30px; 
+    transition: 0.3s ease;
+    border-radius: 15px;
+    padding-top: 30px;
   }
 
   .navbar-right.open {
@@ -137,7 +133,6 @@
     opacity: 1;
     visibility: visible;
   }
-}
 
   .navbar-menu {
     flex-direction: column;
@@ -146,15 +141,18 @@
   }
 
   .navbar-menu li a {
-    color: rgb(250, 248, 248) !important;
+    color: #fff !important;
   }
 
   .navbar-btn {
-  margin-top: 10px;
-  width: 80%;
-  text-align: center;
-  margin: 15px auto;
-  font-size: 18px;
-
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 18px;
   }
 
+  .menu-toggle {
+    display: flex;
+  }
+}
