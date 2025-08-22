@@ -144,7 +144,7 @@
 
 
 @media (max-width: 768px) {
-  .chat-popup {
+.chat-popup {
     width: 300px;
     height: 450px;
     right: 10px;
@@ -157,5 +157,11 @@
   border: none;
   display: block;
 }
-}
+  
+@media (max-width: 1024px) {
+  .chat-popup {
+    right: 20px; 
+    bottom: 20px;
+  }
+}}
 
