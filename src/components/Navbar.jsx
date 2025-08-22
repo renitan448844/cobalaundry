@@ -22,6 +22,7 @@ export default function Navbar() {
     <nav
       className={`navbar ${scrolled ? "navbar-scrolled" : "navbar-transparent"}`}
     >
+      {/* Logo */}
       <div className="navbar-logo">
         <img
           src={logo}
@@ -30,23 +31,27 @@ export default function Navbar() {
         />
       </div>
 
-      <div
-        className={`menu-toggle ${menuOpen ? "active" : ""}`}
-        onClick={toggleMenu}
-      >
+      {/* Tombol hamburger */}
+      <div className="menu-toggle" onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
+      {/* Kotak menu */}
       <div className={`navbar-right ${menuOpen ? "open" : ""}`}>
+        {/* Tombol silang di pojok kiri atas */}
+        <span className="close-btn" onClick={() => setMenuOpen(false)}>✖</span>
+
         <ul className="navbar-menu">
-          <li><a href="#home">Beranda</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#services">Layanan</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="#home" onClick={() => setMenuOpen(false)}>Beranda</a></li>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>Tentang Kami</a></li>
+          <li><a href="#services" onClick={() => setMenuOpen(false)}>Layanan</a></li>
+          <li><a href="#blog" onClick={() => setMenuOpen(false)}>Blog</a></li>
         </ul>
-        <a href="#order" className="navbar-btn">Pesan Sekarang</a>
+        <a href="#order" className="navbar-btn" onClick={() => setMenuOpen(false)}>
+          Pesan Sekarang
+        </a>
       </div>
     </nav>
   );

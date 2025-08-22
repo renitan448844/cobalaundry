@@ -124,12 +124,38 @@
   display: block;
 }
 
-@media (max-width: 400px) {
+.chat-close-top {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #fcfafa;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+
+.chat-close-top:hover {
+  transform: scale(1.2);
+  color: #070707; 
+}
+
+
+@media (max-width: 768px) {
   .chat-popup {
     width: 300px;
     height: 450px;
     right: 10px;
     bottom: 10px;
   }
+
+.chat-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
 }
 

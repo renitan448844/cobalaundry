@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, X } from "lucide-react"; 
 import "../styles/Chatbot.css";
 
 export default function Chatbot() {
@@ -10,10 +10,15 @@ export default function Chatbot() {
     <div className="chatbot-wrapper">
       {isOpen && (
         <div className="chat-popup">
+          {/* Tombol Close di pojok kanan atas */}
+          <button className="chat-close-top" onClick={toggleChat}>
+            <X size={20} />
+          </button>
+
           <div className="chat-header">
             <span>Chat Admin</span>
-            <button className="close-btn" onClick={toggleChat}>✕</button>
           </div>
+
           <div className="chat-body iframe-container">
             <iframe
               src="https://cdn.botpress.cloud/webchat/v3.2/shareable.html?configUrl=https://files.bpcontent.cloud/2025/08/13/02/20250813023102-CXQS6IZA.json"
