@@ -157,11 +157,6 @@
   border: none;
   display: block;
 }
-  
-@media (max-width: 1024px) {
-  .chat-popup {
-    right: 20px; 
-    bottom: 20px;
-  }
-}}
+
+}
 
