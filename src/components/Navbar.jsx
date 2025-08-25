@@ -22,7 +22,6 @@ export default function Navbar() {
     <nav
       className={`navbar ${scrolled ? "navbar-scrolled" : "navbar-transparent"}`}
     >
-      {/* Logo */}
       <div className="navbar-logo">
         <img
           src={logo}
@@ -31,16 +30,13 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Tombol hamburger */}
       <div className="menu-toggle" onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      {/* Kotak menu */}
       <div className={`navbar-right ${menuOpen ? "open" : ""}`}>
-        {/* Tombol silang di pojok kiri atas */}
         <span className="close-btn" onClick={() => setMenuOpen(false)}>✖</span>
 
         <ul className="navbar-menu">
